@@ -17,6 +17,7 @@ public class ListNodeAdder {
         final Integer sum = evaluator1.getIntegerValue() + evaluator2.getIntegerValue();
         return new ListNodeEvaluator(sum).getHead();
     }
+
     public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         String value1 = "";
         String value2 = "";
