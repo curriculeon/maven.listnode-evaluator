@@ -12,6 +12,12 @@ package com.github.curriculeon;
  */
 public class ListNodeAdder {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        final ListNodeEvaluator evaluator1 = new ListNodeEvaluator(l1);
+        final ListNodeEvaluator evaluator2 = new ListNodeEvaluator(l2);
+        final Integer sum = evaluator1.getIntegerValue() + evaluator2.getIntegerValue();
+        return new ListNodeEvaluator(sum).getHead();
+    }
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         String value1 = "";
         String value2 = "";
         ListNode prev1 = l1;

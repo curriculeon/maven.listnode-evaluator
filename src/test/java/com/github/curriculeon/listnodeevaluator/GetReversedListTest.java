@@ -8,12 +8,12 @@ import org.junit.Test;
 import java.util.List;
 
 public class GetReversedListTest {
-    private void test(Integer expected, int... input) {
+    private void test(Integer expected, Integer... input) {
         // given
         ListNodeEvaluator evaluator = new ListNodeEvaluator(input);
 
         // when
-        List<ListNode> result = evaluator.getList();
+        List<ListNode> result = evaluator.getReversedList();
         for (int i = 0; i < input.length; i++) {
             ListNode currentNode = result.get(i);
             int expectedValue = input[i];

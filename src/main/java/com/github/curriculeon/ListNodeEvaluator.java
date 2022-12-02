@@ -21,11 +21,6 @@ public class ListNodeEvaluator {
                 .toArray(Integer[]::new));
     }
 
-    public ListNodeEvaluator(int... values) {
-        this(IntStream.of(values).boxed().toArray(Integer[]::new));
-
-    }
-
     public ListNodeEvaluator(Integer... values) {
         this(new ListNode(values[0]));
         List<Integer> ints = new LinkedList<>();
@@ -47,7 +42,7 @@ public class ListNodeEvaluator {
     }
 
     public Integer getIntegerValue() {
-        return Integer.valueOf(toListReversed()
+        return Integer.valueOf(getReversedList()
                 .stream()
                 .map(node -> String.valueOf(node.val))
                 .collect(Collectors.toList())
@@ -58,7 +53,7 @@ public class ListNodeEvaluator {
                 .replaceAll(" ", ""));
     }
 
-    public List<ListNode> toListReversed() {
+    public List<ListNode> getReversedList() {
         List<ListNode> list = getList();
         System.out.println(list);
         Collections.reverse(list);

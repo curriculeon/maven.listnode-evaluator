@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class GetListTest {
-    private void test(Integer expected, int... input) {
+    private void test(Integer expected, Integer... input) {
         // given
         ListNodeEvaluator evaluator = new ListNodeEvaluator(input);
 

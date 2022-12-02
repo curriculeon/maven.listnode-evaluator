@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class GetIntegerTest {
-    private void test(Integer expected, int... input) {
+    private void test(Integer expected, Integer... input) {
         // given
         ListNodeEvaluator evaluator = new ListNodeEvaluator(input);
 
