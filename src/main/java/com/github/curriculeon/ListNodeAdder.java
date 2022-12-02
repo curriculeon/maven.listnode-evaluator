@@ -1,10 +1,5 @@
 package com.github.curriculeon;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -15,7 +10,7 @@ import java.util.stream.Stream;
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+public class ListNodeAdder {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         String value1 = "";
         String value2 = "";
